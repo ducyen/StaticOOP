@@ -110,6 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="builder.c" />
     <ClCompile Include="circle.c" />
     <ClCompile Include="main.c">
       <PreprocessToFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</PreprocessToFile>
@@ -121,6 +122,7 @@
     <ClCompile Include="square.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="builder.h" />
     <ClInclude Include="circle.h" />
     <ClInclude Include="rctngl.h" />
     <ClInclude Include="shape.h" />

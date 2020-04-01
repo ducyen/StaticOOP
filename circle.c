@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include "circle.h"
 #include "shape_internal.h"
+
 /*----------------------------------------------------------------------*/
 int CIRCLE_CalcArea( 
     SHAPE* me 

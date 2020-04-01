@@ -13,7 +13,7 @@
     .width = w,
 #define SQUARE_Ctor( ... )  { .as_SQUARE = { .type = OBJ_SQUARE, P( SQUARE_Init( __VA_ARGS__ ) ) } }
 #undef  SQUARE_Func
-#define SQUARE_Func( func, me, ... )   ( me )->as_SHAPE.type == OBJ_SQUARE ? func( ( me ), ##__VA_ARGS__ ):
+#define SQUARE_Func( func, me, ... )   SHAPE_IsKindOf( ( me ), OBJ_SQUARE ) ? func( ( me ), ##__VA_ARGS__ ):
 
 int SQUARE_CalcArea( SHAPE* me );
 int SQUARE_CalcPeri( SHAPE* me );

@@ -1,12 +1,6 @@
 #ifndef __SHAPE_H__
 #define __SHAPE_H__
 
-
-typedef enum{
-    OBJ_CIRCLE,
-    OBJ_SQUARE,
-    OBJ_RCTNGL,
-}OBJECT_TYPE;
 /* ---------------------------- SHAPE ---------------------------- */
 typedef union tagSHAPE SHAPE;
 #define SHAPE_CLASS     \

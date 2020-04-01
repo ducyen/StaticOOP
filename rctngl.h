@@ -13,7 +13,7 @@
     .length = l,                 
 #define RCTNGL_Ctor( ... )  { .as_RCTNGL = { .type = OBJ_RCTNGL, P( RCTNGL_Init( __VA_ARGS__ ) ) } }
 #undef  RCTNGL_Func
-#define RCTNGL_Func( func, me, ... )   ( me )->as_SHAPE.type == OBJ_RCTNGL ? func( ( me ), ##__VA_ARGS__ ):
+#define RCTNGL_Func( func, me, ... )   SHAPE_IsKindOf( ( me ), OBJ_RCTNGL ) ? func( ( me ), ##__VA_ARGS__ ):
 
 int RCTNGL_CalcArea( SHAPE* me );
 int RCTNGL_CalcPeri( SHAPE* me );

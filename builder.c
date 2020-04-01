@@ -1,12 +1,9 @@
 #include <stdio.h>
 
 #include "builder.h"
-#include "circle.h"
-#include "square.h"
-#include "rctngl.h"
 #include "shape_internal.h"
 
-SHAPE* Builder_Create( OBJECT_TYPE type ){
+SHAPE* Builder_Create( int type ){
     if( type == OBJ_CIRCLE ){
         static SHAPE c = CIRCLE_Ctor(1, 2, 2);    
         return &c;
@@ -19,4 +16,11 @@ SHAPE* Builder_Create( OBJECT_TYPE type ){
     }else{
         return 0;
     }
+}
+
+int SHAPE_IsKindOf( SHAPE* me, int type ){
+    if( me->as_SHAPE.type == type){
+        return 1;
+    }
+    return 0;
 }
