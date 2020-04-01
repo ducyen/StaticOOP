@@ -3,18 +3,6 @@
 
 #define P(...) __VA_ARGS__
 
-typedef enum{
-#ifdef CIRCLE_CLASS
-    OBJ_CIRCLE,
-#endif
-#ifdef SQUARE_CLASS
-    OBJ_SQUARE,
-#endif
-#ifdef RCTNGL_CLASS
-    OBJ_RCTNGL,
-#endif
-}OBJECT_TYPE;
-
 typedef union tagSHAPE{
     struct{ SHAPE_CLASS }   as_SHAPE;
 #ifdef CIRCLE_CLASS

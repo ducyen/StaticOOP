@@ -1,13 +1,10 @@
 #include <stdio.h>
 
-#include "circle.h"
-#include "square.h"
-#include "rctngl.h"
-#include "shape_internal.h"
+#include "builder.h"
 
 /* ---------------------------- MAIN ---------------------------- */
 int main(void) {
-    SHAPE c = CIRCLE_Ctor(1, 2, 2);
+    SHAPE* c = Builder_Create( OBJ_CIRCLE );
     printf( "Circle area: %d\n", SHAPE_CalcArea( &c ) );
     printf( "Circle peri: %d\n", SHAPE_CalcPeri( &c ) );
     printf( "Circle has right angle: %d\n", SHAPE_HasRtAgl( &c ) );
