@@ -22,7 +22,5 @@ int main(void) {
     printf( "Rectangle peri: %d\n", SHAPE_CalcPeri( &r ) );
     printf( "Rectangle has right angle: %d\n", SHAPE_HasRtAgl( &r ) );
 
-    getchar();
-
     return 0;
 }

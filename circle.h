@@ -17,5 +17,6 @@
 
 int CIRCLE_CalcArea( SHAPE* me );
 int CIRCLE_CalcPeri( SHAPE* me );
+int CIRCLE_HasRtAgl( SHAPE* me );
 
 #endif//__CIRCLE_H__

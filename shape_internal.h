@@ -15,16 +15,6 @@ typedef enum{
 #endif
 }OBJECT_TYPE;
 
-#ifndef CIRCLE_CLASS
-#define CIRCLE_Func( func, me, ... )
-#endif
-#ifndef SQUARE_CLASS
-#define SQUARE_Func( func, me, ... )
-#endif
-#ifndef RCTNGL_CLASS
-#define RCTNGL_Func( func, me, ... )
-#endif
-
 typedef union tagSHAPE{
     struct{ SHAPE_CLASS }   as_SHAPE;
 #ifdef CIRCLE_CLASS

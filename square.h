@@ -17,5 +17,6 @@
 
 int SQUARE_CalcArea( SHAPE* me );
 int SQUARE_CalcPeri( SHAPE* me );
+int SQUARE_HasRtAgl( SHAPE* me );
 
 #endif//__SQUARE_H__
