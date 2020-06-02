@@ -1,7 +1,11 @@
+#define __BUILDER_INTERNAL__
 #include <stdio.h>
 
 #include "builder.h"
 #include "shape_internal.h"
+
+#include "visibilities.h"
+static VISIBILITIES s;
 
 SHAPE* Builder_Create( int type ){
     if( type == OBJ_CIRCLE ){

@@ -128,6 +128,7 @@
     <ClInclude Include="shape.h" />
     <ClInclude Include="shape_internal.h" />
     <ClInclude Include="square.h" />
+    <ClInclude Include="visibilities.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

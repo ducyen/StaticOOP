@@ -1,3 +1,6 @@
+#ifndef __BUILDER_H__
+#define __BUILDER_H__
+
 #include "circle.h"
 #include "square.h"
 #include "rctngl.h"
@@ -16,3 +19,4 @@ typedef enum{
 
 SHAPE* Builder_Create( int type );
 int SHAPE_IsKindOf( SHAPE* me, int type );
+#endif __BUILDER_H__

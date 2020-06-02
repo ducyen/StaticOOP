@@ -1,3 +1,4 @@
+#define __CIRCLE_INTERNAL__
 /* gcc -fms-extensions */
 
 #include <stdio.h>
