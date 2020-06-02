@@ -5,11 +5,6 @@
 #include "shape_internal.h"
 
 /*----------------------------------------------------------------------*/
-#define VIRTUAL_IMPL( returnType, funcName, ... )                           \
-static returnType funcName( __VA_ARGS__ );                                  \
-returnType da39a3ee5e6b4b0d3255bfef95601890afd80709##funcName( __VA_ARGS__ ) __attribute__ ((alias (#funcName))); \
-static returnType funcName( __VA_ARGS__ )
-
 VIRTUAL_IMPL( int, CIRCLE_CalcArea, 
     SHAPE* me 
 ){

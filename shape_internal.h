@@ -1,8 +1,6 @@
 #ifndef __SHAPE_SPEC_H__
 #define __SHAPE_SPEC_H__
 
-#define P(...) __VA_ARGS__
-
 typedef union tagSHAPE{
     struct{ SHAPE_CLASS }   as_SHAPE;
 #ifdef CIRCLE_CLASS

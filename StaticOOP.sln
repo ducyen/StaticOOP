@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StaticOOP", "StaticOOP.vcxproj", "{D7ACE92E-3B3B-4C07-8A1A-92F801C37A16}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StatemachineCpp", "..\StatemachineCpp\StatemachineCpp.vcxproj", "{47722B20-4222-48E5-BBC6-AD4D1F8D954F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{D7ACE92E-3B3B-4C07-8A1A-92F801C37A16}.Release|x64.Build.0 = Release|x64
 		{D7ACE92E-3B3B-4C07-8A1A-92F801C37A16}.Release|x86.ActiveCfg = Release|Win32
 		{D7ACE92E-3B3B-4C07-8A1A-92F801C37A16}.Release|x86.Build.0 = Release|Win32
+		{47722B20-4222-48E5-BBC6-AD4D1F8D954F}.Debug|x64.ActiveCfg = Debug|x64
+		{47722B20-4222-48E5-BBC6-AD4D1F8D954F}.Debug|x64.Build.0 = Debug|x64
+		{47722B20-4222-48E5-BBC6-AD4D1F8D954F}.Debug|x86.ActiveCfg = Debug|Win32
+		{47722B20-4222-48E5-BBC6-AD4D1F8D954F}.Debug|x86.Build.0 = Debug|Win32
+		{47722B20-4222-48E5-BBC6-AD4D1F8D954F}.Release|x64.ActiveCfg = Release|x64
+		{47722B20-4222-48E5-BBC6-AD4D1F8D954F}.Release|x64.Build.0 = Release|x64
+		{47722B20-4222-48E5-BBC6-AD4D1F8D954F}.Release|x86.ActiveCfg = Release|Win32
+		{47722B20-4222-48E5-BBC6-AD4D1F8D954F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,6 +1,26 @@
 #ifndef __SHAPE_H__
 #define __SHAPE_H__
 
+#define P(...)  __VA_ARGS__
+#define HASH_KEY    da39a3ee5e6b4b0d3255bfef95601890afd80709
+#define ENCODE( hashKey, value )    P( hashKey )##value
+
+#ifdef _MSC_VER
+#define VIRTUAL_DECL( returnType, funcName, ... )                           \
+returnType ( * const ENCODE( HASH_KEY, funcName ) )( __VA_ARGS__ )
+#define VIRTUAL_IMPL( returnType, funcName, ... )                           \
+static returnType funcName( __VA_ARGS__ );                                  \
+returnType ( * const ENCODE( HASH_KEY, funcName ) )( __VA_ARGS__ ) = funcName; \
+static returnType funcName( __VA_ARGS__ )
+#else
+#define VIRTUAL_DECL( returnType, funcName, ... )                           \
+returnType ENCODE( HASH_KEY, funcName )( __VA_ARGS__ );
+#define VIRTUAL_IMPL( returnType, funcName, ... )                           \
+static returnType funcName( __VA_ARGS__ );                                  \
+returnType ENCODE( HASH_KEY, funcName )( __VA_ARGS__ ) __attribute__ ((alias (#funcName))); \
+static returnType funcName( __VA_ARGS__ )
+#endif
+
 /* ---------------------------- SHAPE ---------------------------- */
 typedef union tagSHAPE SHAPE;
 #define SHAPE_CLASS     \
