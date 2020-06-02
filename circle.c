@@ -1,9 +1,11 @@
-#define __CIRCLE_INTERNAL__
+#define __CIRCLE_C__
 /* gcc -fms-extensions */
 
 #include <stdio.h>
 #include "circle.h"
 #include "shape_internal.h"
+
+#include "visibilities.h"
 
 /*----------------------------------------------------------------------*/
 VIRTUAL_IMPL( int, CIRCLE_CalcArea, 

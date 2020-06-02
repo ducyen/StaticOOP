@@ -1,4 +1,4 @@
-#define __BUILDER_INTERNAL__
+#define __BUILDER_C__
 #include <stdio.h>
 
 #include "builder.h"

@@ -5,11 +5,8 @@ typedef struct tagVISIBILITIES VISIBILITIES;
 
 #endif//__VISIBILITIES_H__
 
-#if defined( __BUILDER_INTERNAL__ )
-#define __VISIBILITIES_INTERNAL__
-#endif
 
-#if defined( __VISIBILITIES_INTERNAL__ ) && !defined( VISIBILITIES_CLASS )
+#if !defined( VISIBILITIES_CLASS ) && ( defined( __VISIBILITIES_C__ ) || defined( __BUILDER_C__ ) )
 #define VISIBILITIES_CLASS
 typedef struct tagVISIBILITIES{
     int x;
